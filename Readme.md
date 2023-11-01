@@ -38,6 +38,11 @@ virtualenv venv will create a folder in the current directory which will contain
 ```bash
     source venv/bin/activate
 ```
+- upgrade pip
+
+```bash
+    pip install --upgrade pip
+```
 
 You can then start installing packages using the `pip` command.
 
