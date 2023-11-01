@@ -185,13 +185,12 @@ ___
 
 3. Remove Virtual Environment:
 
-    - Deactivate the virtual environment if it's currently activated:
+- Deactivate the virtual environment if it's currently activated:
 
 ```bash
     deactivate
 ```
-
-    - Delete the virtual environment directory:
+- Delete the virtual environment directory:
 
 ```bash
     rm -r venv
@@ -199,13 +198,12 @@ ___
 
 4. Remove cached Python files (Optional):
 
-    - Python generates cached bytecode files (`.pyc`) during execution. You can remove these files if you want to clean them up:
+- Python generates cached bytecode files (`.pyc`) during execution. You can remove these files if you want to clean them up:
 
 ```bash
     find . -name "*.pyc" -exec rm -f {} \;
 ```
-
-    - If you want to clean up Python package caches, remove the  __pycache__ directories:
+-  If you want to clean up Python package caches, remove the  `__pycache__` directories:
 
 ```bash
     find . -type d -name "__pycache__" -exec rm -r {} \;
