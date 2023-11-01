@@ -167,3 +167,52 @@ ___
 
 > Dig deeper by containerizing your project by following these [best practices](https://snyk.io/blog/best-practices-containerizing-python-docker/).
 ___
+
+
+## Clean up
+
+1. Remove git Repo:
+
+```bash
+    rm -rf git
+```
+
+2. Remove `.env` files:
+
+```bash
+    rm .env
+```
+
+3. Remove Virtual Environment:
+
+    - Deactivate the virtual environment if it's currently activated:
+
+```bash
+    deactivate
+```
+
+    - Delete the virtual environment directory:
+
+```bash
+    rm -r venv
+```
+
+4. Remove cached Python files (Optional):
+
+    - Python generates cached bytecode files (`.pyc`) during execution. You can remove these files if you want to clean them up:
+
+```bash
+    find . -name "*.pyc" -exec rm -f {} \;
+```
+
+    - If you want to clean up Python package caches, remove the  __pycache__ directories:
+
+```bash
+    find . -type d -name "__pycache__" -exec rm -r {} \;
+```
+
+5. Clean Up Git Credentials (Optional):
+
+```bash
+    git credential reject
+```
