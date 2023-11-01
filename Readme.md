@@ -146,5 +146,24 @@ Create a repo on Github, then use the following commands:
 ```bash
     git remote add origin https://github.com/your-username/your-repo.git
     git branch -M main
+    git add .
+    git commit -m "first commit"
     git push -u origin main
 ``` 
+
+To ensure that the remote URL points to the correct GitHub repository use:
+
+```bash
+    git remote -v
+```
+
+If needed, you can update the remote URL using:
+
+```bash
+    git remote set-url origin https://github.com/your-username/new-repo.git
+```
+
+___
+
+> Dig deeper by containerizing your project by following these [best practices](https://snyk.io/blog/best-practices-containerizing-python-docker/).
+___
